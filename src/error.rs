@@ -1,7 +1,7 @@
-use crate::celix_bindings;
-use crate::celix_bindings::celix_status_t;
+use crate::celix_sys;
+use crate::celix_sys::celix_status_t;
 
-pub const CELIX_SUCCESS: celix_status_t = celix_bindings::CELIX_SUCCESS as celix_status_t;
+pub const CELIX_SUCCESS: celix_status_t = celix_sys::CELIX_SUCCESS as celix_status_t;
 
 //Note compile-time defined constants are not available in rust generated bindings, so
 //these are defined with literal values.
